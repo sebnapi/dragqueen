@@ -149,7 +149,7 @@ public class OuterLayout extends RelativeLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        if (isQueenTarget(event) && mDragHelper.shouldInterceptTouchEvent(event)) {
+        if (mDragHelper.shouldInterceptTouchEvent(event)) {
                 return true;
         } else {
             return false;
